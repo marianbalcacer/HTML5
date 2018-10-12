@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>
+    1
+  </title>
+
+</head>
+<style>
+ h1{
+   font-family: monospace;
+ }
+</style>
+
+<script type = "text/javascript">
+    function action(){
+      var symbol = window.prompt("Type a symbol to border your name, such as a * or # ");
+      var name = window.prompt("What is your name?");
+      var xxname=name.length;
+
+      for (var i = 0; i < (2*xxname); i++){
+        document.write(symbol);
+      };
+      document.write("<br>");
+      for(var i=0;i<xxname/2;i++){
+        document.write(symbol);
+      }
+      document.write(name);
+      for(var i=0;i<xxname/2;i++){
+        if(xxname%2!=0&&i==0)
+        i++;
+        document.write(symbol);
+      }
+      document.write("<br>");
+      for (var i = 0; i < (2*xxname); i++)
+      {
+        document.write(symbol);
+      };
+    }
+  </script>
+<body>
+<h1>Put your name in a Box</h1>
+
+<input type="button" id="b1" value="get started now!" onclick="action();">
+
+</body>
+</html>
