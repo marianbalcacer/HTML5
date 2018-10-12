@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+       <title>Bouncing Logo</title>
+       <style>
+           div.bound {
+               display:block;
+               border-style:solid;
+               width:502px;
+               height:402px;
+               border-width:1px
+           }
+
+           div.move {
+               position:absolute;
+           }
+       </style>
+       <script type="text/javascript">
+           var x = 5;
+           var y = 5;
+           var max_x = 400;
+           var max_y = 300;
+           var xoffset = 10;
+           var yoffset = 10;
+
+           function go() {
+               moveCSLogo();
+               alert("Pick speed level below the bound")
+           }
+           function moveCSLogo() {
+               x = x + xoffset;
+               y = y + yoffset;
+
+               document.getElementById("msucs").style.top = y+'px';
+               document.getElementById("msucs").style.left = x+'px';
+               if ((x+xoffset > max_x) || (x+xoffset < 0))
+                   xoffset *=-1;
+               if ((y+yoffset > max_y) || (y+yoffset < 0))
+                   yoffset *=-1;
+               window.setTimeout('moveCSLogo()',100);
+           }
+       </script>
+   </head>
+   <body onload="go(100)">
+       <div class="bound">
+           <div id="msucs" class="move">
+               <img src="ball.gif" height="30" width="30" />
+           </div>
+       </div>
+       <div>
+         <input type="button" onclick="xoffset=20;yoffset=20" value="Faster" />
+         <input type="button" onclick="xoffset=10;yoffset=10" value="Normal" />
+         <input type="button" onclick="xoffset=5;yoffset=5" value="Slow" />
+
+       </div>
+   </body>
+</html

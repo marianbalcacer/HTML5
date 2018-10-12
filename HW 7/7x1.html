@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    1
+  </title>
+  <style>
+  div{
+    font-size: 50px;
+  }
+  button {
+    font-size: 30px;
+  }
+  </style>
+<script>
+
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    var ml = today.getMilliseconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    ml = ml%10;
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s + ":" + ml;
+
+    var t = setTimeout(startTime, 100);
+}
+
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}
+</script>
+</head>
+<body align="center">
+  <br>
+
+<button type="submit" onclick="startTime()" > What time is it?</button>
+<br><br>
+
+<div id="txt"></div>
+</body>
+</html>
