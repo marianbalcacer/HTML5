@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>
+    4
+  </title>
+  <style>
+  body {
+    text-align: center;
+    font-weight: bold;
+  }
+  </style>
+  <body>
+    <script>
+      while (1){
+      var num = prompt("Enter a number between 1-20", "1");
+      var num2 = prompt("Enter a number between 1-20", "1");
+      var num2=parseInt(num2);
+      var num = parseInt(num);
+      if(num<1|| num2<1 ||num>20||num2>20){
+        alert("Inputs are not in range. Enter a number between 1-20","1");
+  continue;
+      }
+      else {
+
+        var i = 0;
+          document.write('<table border="1" cellspacing="1" align="center"><col width="200"><col width="200"><col width="200">');
+          document.write("<tr><td>number</td><td>square</td><td>cube</td></tr>");
+        for(i=num2;i<=num;i++) {
+          document.write("<tr><td>" + i + "</td><td>" + i*i + "</td><td>" + i*i*i + "</td></tr>");
+        }
+          document.write("</table>");
+          var i = 0;
+            document.write('<table border="" cellspacing="1" align="center"><col width="200"><col width="200"><col width="200">');
+          for(j=num;j<=num2;j++) {
+            document.write("<tr><td>" + j + "</td><td>" + j*j + "</td><td>" + j*j*j + "</td></tr>");
+          }
+            document.write("</table>");
+          break;
+    }
+}
+
+</script>
+</body>
+</html>
