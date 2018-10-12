@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>
+         Drop Down Menu
+      </title>
+      <style type = "text/css">
+         body            { font-family: arial, sans-serif }
+         nav             { font-weight: bold;
+                           color: cyan;
+                           border: 2px solid red;
+                           text-align: center;
+                           width: 10em;
+                           background-color: green;
+                           position: relative;
+                           display: inline-block;}
+         nav ul          { position: absolute;
+                            display: none;
+                           list-style: none;
+                           margin: 0;
+                           padding: 0; }
+         nav:hover ul    { display: block; }
+         nav ul li       { border-top: 2px solid RoyalBlue;
+                           background-color: red;
+                           width: 10em;
+                           color: brown; }
+         nav ul li:hover { background-color: yellow; color:hotpink;}
+         a               { text-decoration: none; color: white;
+         }
+         a:hover {
+                  text-decoration: none; color: purple;
+         }
+      </style>
+   </head>
+   <body>
+      <nav>Some Colleges at MSU
+         <ul>
+            <li><a href = "http://www.montclair.edu/csam/">College of Math and Sciences</a></li>
+            <li><a href = "https://business.montclair.edu/">Business School</a></li>
+            <li><a href = "http://www.montclair.edu/chss/">College of Humanities and Social Sciences </a></li>
+         </ul>
+      </nav>
+        <nav>Departments in CSAM
+         <ul>
+            <li><a href = "http://www.montclair.edu/csam/biology/">Biology</a></li>
+            <li><a href = "http://www.montclair.edu/csam/chemistry-biochemistry/">Chemistry</a></li>
+            <li><a href = "http://www.montclair.edu/csam/computer-science/">Computer Science</a></li>
+            <li><a href = "http://www.montclair.edu/csam/mathematical-sciences/">Mathematical</a></li>
+         </ul>
+       </nav>
+   </body>
+</html>
