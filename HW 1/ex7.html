@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title> Membership Form</title>
+<body>
+
+<h1>Membership Form</h1>
+<form method = "post" autocomplete = "on">
+<legend align="left">
+
+<p><label>First Name:  
+	<input type="text" id="firstName" size="35"></label></p>
+
+<p><label>Last Name:  
+	<input type="text" id="lastName" size="35"></label></p>
+    
+<p><label>Email Address:
+	<input type="text" id="email" size="35"></label></p>
+    
+<p><label>Phone Number:
+	<input type="text" id="firstName" size="35"></label><br></p>
+    
+<label>Resident State: 
+
+     <select name = "States">
+         <option selected = "selected">NJ</option>
+         <option>MN</option>
+         <option>NY</option>
+         <option>GA</option>
+         <option>TX</option>
+         <option>TN</option>
+         <option>NC</option>
+         <option>SC</option>
+         <option>CT</option>
+         <option>MA</option>
+         <option>CA</option>
+         <option>PA</option>
+       </select>
+  </label>
+  <br>
+
+  <form action="">
+  <p>Age Group</p>
+  <input type="radio" name="age" value="0-20"> 0-20<br>
+  <input type="radio" name="age" value="21-40"> 21-40<br>
+ <input type="radio" name="age" value="41-60"> 41-60<br>
+  <input type="radio" name="age" value="Over"> Over 60<br>
+</form>
+
+<form action="">
+<p>Membership</p>
+
+<input type="checkbox" name="TYPE" value="AAA">AAA
+<input type="checkbox" name="TYPE" value="IEEE">IEEE 
+<input type="checkbox" name="TYPE" value="Costco">Costco
+<input type="checkbox" name="TYPE" value="ACM">ACM 
+</form>
+
+
+
+     <p><label>Comments:<br />
+         <textarea name = "comments" rows = "4" cols = "36"> 
+          </textarea>
+     </label></p>
+<p>
+            <input type = "submit" value = "Submit Inputs" />
+            <input type = "reset" value =  "Clear Inputs" />
+         </p>   
+ </form>
+	</body>
+	</html>
